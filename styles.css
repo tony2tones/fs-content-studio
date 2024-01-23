@@ -1,29 +1,60 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Montserrat, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 header {
-    text-wrap: wrap;
-    justify-content: center;
+  justify-content: center;
+}
+article {
+  display: inline-block;
+}
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
 }
 
 /* Large devices (desktops, laptops) */
-.image {
 
-    max-width: 100%;
-    height: auto;
-    background-image: url("./assets/images/fs-content-studio\ mobile.png");
-    overflow: hidden;
-    background-size: cover;
-    /* background-position: center;
-    background-repeat: no-repeat; */
-}
 
 /* Medium devices (tablets) */
 @media (max-width: 1024px) {
-    .image {
-        width: 80%; /* Adjust as needed for tablets */
-    }
-}
+  /* .image {
+    width: 80%; /* Adjust as needed for tablets */
+  } 
+/* } */
 
 /* Small devices (phones) */
 @media (max-width: 600px) {
-    .image {
-    }
+  /* .image {
+  } */
 }
