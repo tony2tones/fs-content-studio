@@ -1,10 +1,13 @@
+
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
+  background-color: #140c0c;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #f4f4f4;
+  color: rgb(193,159,72);
+
 }
 
 h1,
@@ -12,7 +15,7 @@ h2,
 h3,
 h4 {
   font-family: Montserrat, sans-serif;
-  color: #333;
+  color: rgb(193,159,72);
   margin-bottom: 20px;
 }
 
@@ -21,10 +24,12 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 
 }
 
 .logo {
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,13 +53,13 @@ ul {
 
 /* Medium devices (tablets) */
 @media (max-width: 1024px) {
-  /* .image {
-    width: 80%; /* Adjust as needed for tablets */
   } 
 /* } */
 
 /* Small devices (phones) */
-@media (max-width: 600px) {
-  /* .image {
-  } */
+@media (max-width: 400px) {
+  img {
+    width: 300px;
+    height: 200px;;
+  }
 }
