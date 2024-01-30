@@ -26,11 +26,11 @@ a {
 }
 
 .wrapper-banner.min {
-  
 }
 
 .wrapper-banner {
   margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,6 +124,15 @@ hr {
   font-family: Roboto, sans-serif;
   max-width: 100%;
   height: auto;
+}
+
+.founders {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 /* .logo-banner > img { */
