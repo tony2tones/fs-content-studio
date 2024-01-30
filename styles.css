@@ -1,4 +1,7 @@
-
+:root {
+  --blue: #1e90ff;
+  --gold: rgb(219, 172, 51);
+}
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -6,8 +9,7 @@ body {
   background-color: #140c0c;
   align-items: center;
   justify-content: center;
-  color: rgb(193,159,72);
-
+  color: rgb(193, 159, 72);
 }
 
 h1,
@@ -15,17 +17,30 @@ h2,
 h3,
 h4 {
   font-family: Montserrat, sans-serif;
-  color: rgb(193,159,72);
+  color: rgb(193, 159, 72);
   margin-bottom: 20px;
 }
 
+a {
+  color: rgb(193, 159, 72);
+}
+
+.wrapper-banner.min {
+  
+}
+
+.wrapper-banner {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem;
-
 }
 
 .logo {
@@ -33,9 +48,10 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
+nav {
+  display: flex;
+}
 header {
   justify-content: center;
 }
@@ -48,18 +64,85 @@ ul {
   list-style-type: none;
 }
 
-/* Large devices (desktops, laptops) */
+/* FC conetnt studio Logo styles */
+.logo-container {
+  /* padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; */
+}
 
+.border {
+  border: 5px solid var(--gold);
+  height: 17%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  width: 55%;
+}
+
+.logo-text {
+  position: relative;
+}
+
+.logo-title {
+  font-family: Poppins, Montserrat, sans-serif;
+  color: var(--gold);
+  font-size: 5rem;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #140c0c;
+  padding-bottom: 3px;
+}
+
+hr {
+  display: block;
+  width: 5.5rem;
+  border: 0;
+  border-top: 1px solid var(--gold);
+  padding: 0;
+}
+
+.sub-text {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: max-content;
+  font-size: xx-large;
+  position: relative;
+  left: 2rem;
+}
+
+.subtitle {
+  display: inline-block;
+  background-color: #140c0c;
+  font-family: Roboto, sans-serif;
+}
+
+.logo-banner {
+  font-family: Roboto, sans-serif;
+  max-width: 100%;
+  height: auto;
+}
+
+/* .logo-banner > img { */
+/* object-fit: cover; */
+/* width:40px;
+  height:30px; */
+/* } */
+
+/* Large devices (desktops, laptops) */
 
 /* Medium devices (tablets) */
 @media (max-width: 1024px) {
-  } 
+}
 /* } */
 
 /* Small devices (phones) */
 @media (max-width: 400px) {
   img {
     width: 300px;
-    height: 200px;;
+    height: 200px;
   }
 }
