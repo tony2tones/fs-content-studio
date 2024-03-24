@@ -1,6 +1,7 @@
 :root {
   --blue: #1e90ff;
   --gold: rgb(219, 172, 51);
+  --background: #15171b;
 }
 
 body {
@@ -29,10 +30,14 @@ a {
 }
 
 .wrapper-banner {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.header-image {
+  position: relative;
+  display: flex;
   justify-content: center;
 }
 
@@ -49,8 +54,18 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.title {
+  padding-top: 2rem;
+  font-size: xxx-large;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 nav {
   display: flex;
+  margin-bottom: -2rem;
 }
 header {
   justify-content: center;
@@ -61,9 +76,18 @@ article {
 ul {
   display: flex;
   gap: 2rem;
-  list-style-type: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
+.logo-holder {
+  position: absolute;
+  background-color: #020001;
+  top: 6.5rem;
+  left: 6.3rem;
+}
 /* FC conetnt studio Logo styles */
 .logo-container {
   /* padding: 2rem;
@@ -92,7 +116,7 @@ ul {
   font-size: 5rem;
   font-weight: 600;
   display: inline-block;
-  background-color: #140c0c;
+  background-color: #020001;
   padding-bottom: 3px;
 }
 
@@ -102,6 +126,13 @@ hr {
   border: 0;
   border-top: 1px solid var(--gold);
   padding: 0;
+}
+
+hr.divider {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 2rem auto 2rem;
 }
 
 .sub-text {
@@ -116,8 +147,24 @@ hr {
 
 .subtitle {
   display: inline-block;
-  background-color: #140c0c;
+  background-color: #020001;
   font-family: Roboto, sans-serif;
+  padding-bottom: 5px;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  max-height: 60%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.profile-img img {
+  /* Make the image responsive */
+  width: 50%;
+  height: 60%;
+  display: block;
 }
 
 .logo-banner {

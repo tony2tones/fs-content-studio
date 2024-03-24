@@ -1,0 +1,24 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="447" height="200">
+  <!-- Border -->
+  <rect x="5" y="10" width="280" height="180" stroke="rgb(219, 172, 51)" stroke-width="5" fill="none"/>
+
+  <!-- Logo Text -->
+  <g transform="translate(20, 40)">
+    <!-- Logo Title -->
+    <text x="0" y="65" fill="rgb(219, 172, 51)" font-family="Poppins, Montserrat, sans-serif" z-index="7" background-color="black" font-size="70" font-weight="200">
+      Franschhoek
+    </text>
+
+    <!-- Horizontal Line -->
+    <rect x="0" y="98" width="180" height="1" fill="rgb(219, 172, 51)"/>
+
+    <!-- Subtext -->
+    <text x="50" y="98" fill="rgb(219, 172, 51)" font-family="Roboto, sans-serif" font-size="20">
+      CONTENT STUDIO
+    </text>
+
+    <!-- Horizontal Line -->
+    <rect x="0" y="75" width="180" height="1" fill="rgb(219, 172, 51)"/>
+  </g>
+</svg>
