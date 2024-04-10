@@ -26,7 +26,19 @@ a {
   color: rgb(193, 159, 72);
 }
 
+p {
+  color:#ffff;
+}
+
 .wrapper-banner.min {
+}
+
+.banner {
+  position: absolute;
+  bottom: 51%;
+  display: inline-block;
+  height: 272px;
+  background-color: #020001;
 }
 
 .wrapper-banner {
@@ -35,12 +47,12 @@ a {
   justify-content: center;
 }
 
-.header-image {
-  position: relative;
-  display: flex;
-  justify-content: center;
+.header-image img {
+  max-width: 100%; /* Ensure the image stays within the width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
 }
-
 .container {
   display: flex;
   justify-content: center;
@@ -53,6 +65,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* Set initial width to 100% of the parent container */
+  height: auto;
 }
 
 .title {
@@ -153,7 +167,7 @@ hr.divider {
 }
 
 .profile-img {
-  width: 100%;
+  width: 70%;
   height: auto;
   max-height: 60%;
   object-fit: cover;
@@ -162,8 +176,8 @@ hr.divider {
 
 .profile-img img {
   /* Make the image responsive */
-  width: 50%;
-  height: 60%;
+  width: 45%;
+  height: 50%;
   display: block;
 }
 
@@ -178,7 +192,7 @@ hr.divider {
   padding: 0;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 2fr);
   gap: 20px;
 }
 
@@ -190,15 +204,53 @@ hr.divider {
 
 /* Large devices (desktops, laptops) */
 
+@media (max-width: 768px) {
+  .wrapper-banner.min {
+    width: 100%;
+    background-color: black; /* or any other color you prefer */
+  }
+}
+
 /* Medium devices (tablets) */
 @media (max-width: 1024px) {
+  .founders {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* } */
 
 /* Small devices (phones) */
-@media (max-width: 400px) {
-  img {
+@media (max-width: 700px) {
+
+  .logo-container {
+    max-width: 436px; /* Reduce the width at smaller screen sizes */
+  }
+  .border {
+    width: 50%; /* Adjust the width of the border */
+  }
+  .logo-title {
+    font-size: 4rem; /* Adjust the font size of the title */
+  }
+  .subtitle {
+    font-size: x-large; /* Adjust the font size of the subtitle */
+  }
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -16rem; 
+  }
+  .description-container {
+    background-color:rgb(25 23 23 / 50%);
+  }
+  .founders {
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+  }
+
+  /* img {
     width: 300px;
     height: 200px;
-  }
+  } */
 }
