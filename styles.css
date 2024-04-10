@@ -1,4 +1,8 @@
-
+:root {
+  --blue: #1e90ff;
+  --gold: rgb(219, 172, 51);
+  --background: #15171b;
+}
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -6,8 +10,7 @@ body {
   background-color: #140c0c;
   align-items: center;
   justify-content: center;
-  color: rgb(193,159,72);
-
+  color: rgb(193, 159, 72);
 }
 
 h1,
@@ -15,17 +18,46 @@ h2,
 h3,
 h4 {
   font-family: Montserrat, sans-serif;
-  color: rgb(193,159,72);
+  color: rgb(193, 159, 72);
   margin-bottom: 20px;
 }
 
+a {
+  color: rgb(193, 159, 72);
+}
 
+p {
+  color:#ffff;
+}
+
+.wrapper-banner.min {
+}
+
+.banner {
+  position: absolute;
+  bottom: 51%;
+  display: inline-block;
+  height: 272px;
+  background-color: #020001;
+}
+
+.wrapper-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-image img {
+  max-width: 100%; /* Ensure the image stays within the width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem;
-
 }
 
 .logo {
@@ -33,9 +65,22 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  width: 100%; /* Set initial width to 100% of the parent container */
+  height: auto;
 }
 
+.title {
+  padding-top: 2rem;
+  font-size: xxx-large;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  margin-bottom: -2rem;
+}
 header {
   justify-content: center;
 }
@@ -45,21 +90,170 @@ article {
 ul {
   display: flex;
   gap: 2rem;
-  list-style-type: none;
+  list-style: none;
 }
+a {
+  text-decoration: none;
+}
+
+.logo-holder {
+  position: absolute;
+  background-color: #020001;
+  top: 6.5rem;
+  left: 6.3rem;
+}
+/* FC conetnt studio Logo styles */
+.logo-container {
+  /* padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; */
+}
+
+.border {
+  border: 5px solid var(--gold);
+  height: 17%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  width: 55%;
+}
+
+.logo-text {
+  position: relative;
+}
+
+.logo-title {
+  font-family: Poppins, Montserrat, sans-serif;
+  color: var(--gold);
+  font-size: 5rem;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #020001;
+  padding-bottom: 3px;
+}
+
+hr {
+  display: block;
+  width: 5.5rem;
+  border: 0;
+  border-top: 1px solid var(--gold);
+  padding: 0;
+}
+
+hr.divider {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 2rem auto 2rem;
+}
+
+.sub-text {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: max-content;
+  font-size: xx-large;
+  position: relative;
+  left: 2rem;
+}
+
+.subtitle {
+  display: inline-block;
+  background-color: #020001;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 5px;
+}
+
+.profile-img {
+  width: 70%;
+  height: auto;
+  max-height: 60%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.profile-img img {
+  /* Make the image responsive */
+  width: 45%;
+  height: 50%;
+  display: block;
+}
+
+.logo-banner {
+  font-family: Roboto, sans-serif;
+  max-width: 100%;
+  height: auto;
+}
+
+.founders {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+}
+
+/* .logo-banner > img { */
+/* object-fit: cover; */
+/* width:40px;
+  height:30px; */
+/* } */
 
 /* Large devices (desktops, laptops) */
 
+@media (max-width: 768px) {
+  .wrapper-banner.min {
+    width: 100%;
+    background-color: black; /* or any other color you prefer */
+  }
+}
 
 /* Medium devices (tablets) */
 @media (max-width: 1024px) {
-  } 
+  .founders {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* } */
 
 /* Small devices (phones) */
-@media (max-width: 400px) {
-  img {
-    width: 300px;
-    height: 200px;;
+@media (max-width: 700px) {
+
+  .logo-container {
+    max-width: 436px; /* Reduce the width at smaller screen sizes */
   }
+  .logo-holder {
+    left: 3.3rem;
+  }
+  .border {
+    width: 50%; /* Adjust the width of the border */
+  }
+  .logo-title {
+    font-size: 4rem; /* Adjust the font size of the title */
+  }
+  .subtitle {
+    font-size: x-large; /* Adjust the font size of the subtitle */
+  }
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -16rem; 
+  }
+  .description-container {
+    background-color:rgb(25 23 23 / 50%);
+  }
+  .founders {
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+  }
+
+  /* img {
+    width: 300px;
+    height: 200px;
+  } */
 }
