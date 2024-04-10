@@ -225,6 +225,9 @@ hr.divider {
   .logo-container {
     max-width: 436px; /* Reduce the width at smaller screen sizes */
   }
+  .logo-holder {
+    left: 3.3rem;
+  }
   .border {
     width: 50%; /* Adjust the width of the border */
   }
