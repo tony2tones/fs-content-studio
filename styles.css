@@ -27,7 +27,11 @@ a {
 }
 
 p {
-  color:#ffff;
+  color: #ffff;
+}
+
+ul {
+  color: #ffff;
 }
 
 .wrapper-banner.min {
@@ -167,9 +171,9 @@ hr.divider {
 }
 
 .profile-img {
-  width: 70%;
+  width: 95%;
   height: auto;
-  max-height: 60%;
+  max-height: 86%;
   object-fit: cover;
   object-position: top;
 }
@@ -177,7 +181,7 @@ hr.divider {
 .profile-img img {
   /* Make the image responsive */
   width: 45%;
-  height: 50%;
+  height: auto;
   display: block;
 }
 
@@ -196,14 +200,45 @@ hr.divider {
   gap: 20px;
 }
 
-/* .logo-banner > img { */
-/* object-fit: cover; */
-/* width:40px;
-  height:30px; */
-/* } */
+.description-container {
+  line-height: 1.5;
+  margin-top: -1rem;
+  background-color: rgb(25 23 23 / 50%);
+}
 
+.description-container h2 {
+  color: #ffff;
+}
+
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: medium;
+}
+
+.container-services {
+  display: flex;
+  min-height: 40rem;
+}
+
+.container-services img {
+  flex-grow: 1; /* Take up all available space within the flex container */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+}
 /* Large devices (desktops, laptops) */
+/* Our services */
+.service-description {
+  max-width: 50%;
+  margin: 4rem;
+  margin-top: 0;
+}
 
+.list-style {
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 768px) {
   .wrapper-banner.min {
     width: 100%;
@@ -216,12 +251,26 @@ hr.divider {
   .founders {
     grid-template-columns: repeat(2, 1fr);
   }
+  .container-services {
+    display: block;
+    position: relative;
+  }
+  .service-description {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    line-height: 1.5;
+    background-color: rgb(25 23 23 / 60%);
+  }
 }
 /* } */
 
 /* Small devices (phones) */
 @media (max-width: 700px) {
-/* //small change÷ */
+  /* //small change÷ */
   .logo-container {
     max-width: 436px; /* Reduce the width at smaller screen sizes */
   }
@@ -241,15 +290,15 @@ hr.divider {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: -16rem; 
+    margin-bottom: -16rem;
   }
   .description-container {
-    background-color:rgb(25 23 23 / 50%);
+    background-color: rgb(25 23 23 / 50%);
   }
   .founders {
     display: flex;
     flex-direction: column;
-    gap:2.5rem;
+    gap: 2.5rem;
   }
 
   /* img {
