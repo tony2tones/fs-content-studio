@@ -106,6 +106,13 @@ a {
   top: 6.5rem;
   left: 6.3rem;
 }
+
+.logo-holder{
+  display: block;
+}
+.header-image.mobile {
+  display: none;
+}
 /* FC conetnt studio Logo styles */
 .logo-container {
   /* padding: 2rem;
@@ -274,6 +281,12 @@ hr.divider {
 
 /* Small devices (phones) */
 @media (max-width: 700px) {
+  .header-image.mobile {
+    display: block;
+  }
+  .logo-holder{
+    display: none;
+  }
   .container {
     padding-right: 0;
     padding-left: 0;
@@ -309,7 +322,7 @@ hr.divider {
     gap: 2.5rem;
   }
 
-  @media (max-width: 666px) {
+  @media (max-width: 670px) {
     /* //small change÷ */
     .logo-container {
       max-width: auto; /* Reduce the width at smaller screen sizes */
@@ -328,6 +341,10 @@ hr.divider {
     }
     .subtitle {
       font-size: large; /* Adjust the font size of the subtitle */
+    }
+    .sub-text {
+      display: flex;
+      flex-direction: column;
     }
   }
 
