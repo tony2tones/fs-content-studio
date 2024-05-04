@@ -263,7 +263,17 @@ hr.divider {
 
 .flex-col {
   display: flex;
+  justify-content: ;
+  gap: 2rem;
   flex-direction: column;
+  width: 450px;
+  justify-content: center; 
+  align-items:center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
