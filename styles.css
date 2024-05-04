@@ -274,6 +274,7 @@ hr.divider {
 form {
   display: flex;
   justify-content: center;
+  padding-bottom:2rem;
 }
 
 @media (max-width: 768px) {
