@@ -166,17 +166,20 @@
       <h1 class="title">Contact Us</h1>
       <form
         id="contactform"
-        action="https://formsubmit.io/send/9d5b8dd5-b27f-4ae6-969d-c22251a3b02e"
+        action="https://formsubmit.io/send/e45787fa-4b97-48d6-83fd-52fcd514a6df"
         method="POST"
       >
         <div class="flex-col">
-          <input name="name" type="text" id="name" />
-          <input name="email" type="email" id="email" />
+          <label for="name">Name</label>
+          <input name="name" type="text" id="name" placeholder="Input name"/>
+          <label for="email">email</label>
+          <input name="email" type="email" id="email" placeholder="Input email"/>
+          <label for="comment">message</label>
           <textarea name="comment" id="comment" rows="3"></textarea>
 
           <input name="_formsubmit_id" type="text" style="display: none" />
 
-          <input value="Submit" type="submit" />
+          <button value="Submit" type="submit">Submit</button>
         </div>
       </form>
       <div class="contact-us-container">
