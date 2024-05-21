@@ -56,11 +56,48 @@ ul {
   padding-top: 0rem;
 }
 .header-image img {
-  max-width: 100%; /* Ensure the image stays within the width of its container */
-  height: auto; /* Maintain the image's aspect ratio */
-  display: block; /* Ensure the image behaves as a block element */
-  margin: 0 auto; /* Center the image horizontally */
+  display: block;
+  object-fit: cover;
 }
+
+.header-image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust this as needed */
+  overflow: hidden;
+}
+
+.header-text{
+  position: absolute;
+  top: 89%;
+  left: 80%;
+  width: 23rem;
+  transform: translate(-50%, -50%);
+  color: #ffff;
+  font-size: x-large;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+.logo-holder-1 {
+  background-image: url('./assets/logo/logo-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  width: 100%;
+  height: 100%;
+}
+
+.header-image {
+  background-image: url('./assets/logo/logo-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  width: 100%;
+  height: 100%;
+}
+
+
 .container {
   display: flex;
   justify-content: center;
