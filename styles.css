@@ -318,6 +318,25 @@ form {
   padding-bottom:2rem;
 }
 
+.company-profile-container {
+  display: flex;
+  gap:1rem;
+}
+
+.company-profile-image {
+  background-image: url('./assets//images/dishes.JPG');
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 55vh;
+}
+
+.company-profile-description {
+  margin: 2rem;
+    width: 25rem;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
   .wrapper-banner.min {
     width: 100%;
@@ -354,6 +373,7 @@ form {
 /* Small devices (phones) */
 @media (max-width: 700px) {
   .header-image.mobile {
+    background-image: url('./assets/logo/logo-crop.jpg');
     display: block;
   }
   .logo-holder {
