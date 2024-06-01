@@ -2,6 +2,7 @@
   --blue: #1e90ff;
   --gold: rgb(219, 172, 51);
   --background: #15171b;
+  --dark: 140c0c;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   color: rgb(193, 159, 72);
+  width: fit-content;
 }
 
 h1,
@@ -61,13 +63,13 @@ ul {
 }
 
 .header-image-container {
-  position: relative;
   width: 100%;
   height: 100vh; /* Adjust this as needed */
+  min-height: 450px;
   overflow: hidden;
 }
 
-.header-text{
+.header-text {
   position: absolute;
   top: 89%;
   left: 80%;
@@ -80,7 +82,7 @@ ul {
 }
 
 .logo-holder-1 {
-  background-image: url('./assets/logo/logo-header.jpg');
+  background-image: url("./assets/logo/logo-header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; /* Prevents the background image from repeating */
@@ -89,14 +91,15 @@ ul {
 }
 
 .header-image {
-  background-image: url('./assets/logo/logo-header.jpg');
+  background-image: url("./assets/logo/logo-header.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-repeat: no-repeat;
+  margin: 5px;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* or a specific height */
+  overflow: hidden;
 }
-
 
 .container {
   display: flex;
@@ -150,9 +153,6 @@ a {
 
 .logo-holder {
   display: block;
-}
-.header-image.mobile {
-  display: none;
 }
 /* FC conetnt studio Logo styles */
 .logo-container {
@@ -264,6 +264,10 @@ hr.divider {
   font-size: medium;
 }
 
+.mobile {
+  display: none;
+}
+
 .container-services {
   display: flex;
   min-height: 40rem;
@@ -273,6 +277,7 @@ hr.divider {
   flex-grow: 1; /* Take up all available space within the flex container */
   max-width: 100%; /* Ensure the image doesn't exceed its container's width */
   height: auto; /* Maintain the image's aspect ratio */
+  background-size: contain;
 }
 /* Large devices (desktops, laptops) */
 /* Our services */
@@ -290,7 +295,7 @@ hr.divider {
 
 .contact-us-container {
   display: flex;
-  gap:2rem;
+  gap: 2rem;
   justify-content: center;
 }
 .contact-us-container img {
@@ -300,7 +305,7 @@ hr.divider {
 
 input {
   width: 15rem;
-    height: 17px;
+  height: 17px;
 }
 
 .flex-col {
@@ -308,33 +313,67 @@ input {
   gap: 0.5rem;
   flex-direction: column;
   width: 450px;
-  justify-content: center; 
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
   display: flex;
   justify-content: center;
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 }
 
 .company-profile-container {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
 }
 
 .company-profile-image {
-  background-image: url('./assets//images/dishes.JPG');
-  background-size: cover;
+  position: fixed;
+  background-image: url("./assets//images/dishes.JPG");
+  background-size: contain;
   background-position: center;
-  width: 50%;
+  top: 35px;
+  width: 100%;
   height: 55vh;
+  z-index:-88;
+  margin-top: 2rem;
 }
 
 .company-profile-description {
-  margin: 2rem;
-    width: 25rem;
-    line-height: 1.5;
+  width: 100%;
+  background-color: var(--background);
+  line-height: 1.5;
+  padding-top: 7rem;
+  min-height: 18rem;
+}
+
+.parallax {
+  perspective: 1px;
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+.background-color {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #15171b;
 }
 
 @media (max-width: 768px) {
@@ -349,6 +388,9 @@ form {
   .containerb {
     padding-right: 0;
     padding-left: 0;
+  }
+  .header-text {
+    left: 50%;
   }
   .founders {
     grid-template-columns: repeat(2, 1fr);
@@ -368,17 +410,34 @@ form {
     background-color: rgb(25 23 23 / 60%);
   }
 }
+
+.company-profile-container {
+  min-height: 80vh;
+  flex-direction: column;
+}
+.company-profile-image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+.header-image {
+  height: 50vh;
+  width: 100%;
+}
 /* } */
 
 /* Small devices (phones) */
 @media (max-width: 700px) {
-  .header-image.mobile {
-    background-image: url('./assets/logo/logo-crop.jpg');
+ 
+  .mobile {
     display: block;
+    width: 100vw;
+    height: 100vh;
   }
-  .logo-holder {
-    display: none;
-  }
+
   .container {
     padding-right: 0;
     padding-left: 0;
@@ -414,12 +473,13 @@ form {
     gap: 2.5rem;
   }
 
-  /* .container-services {
-    display: flex;
-    flex-direction: column;
-  } */
-
   @media (max-width: 670px) {
+    .header-image-container {
+      height: fit-content;
+    }
+    .header-text {
+      top: 50%;
+    }
     /* //small change÷ */
     .logo-container {
       max-width: auto; /* Reduce the width at smaller screen sizes */
@@ -430,6 +490,11 @@ form {
       bottom: 37.5rem;
       left: 10px;
     }
+
+    .header-text {
+      left: 50%;
+    }
+
     .border {
       width: 50%; /* Adjust the width of the border */
     }
@@ -448,9 +513,5 @@ form {
       margin-left: -20px;
       margin-right: 15px;
     }
-
-    /* .contact-us-container {
-      flex-wrap: wrap;
-    } */
   }
 }
