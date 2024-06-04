@@ -94,7 +94,7 @@ ul {
   background-repeat: no-repeat;
   margin: 5px;
   width: 100%;
-  height: 100vh; /* or a specific height */
+  height: 50vh; /* or a specific height */
   overflow: hidden;
 }
 
@@ -427,25 +427,145 @@ form {
 
 .slide:nth-child(1) {
   background-color: #49b293;
+  background-image: url("./assets//images/carousel-images/bone\ broth\ 2.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .slide:nth-child(2) {
   background-color: #b03532;
+  background-image: url("./assets//images/carousel-images/chicken\ risotto.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .slide:nth-child(3) {
   background-color: #6a478f;
+  background-image: url("./assets//images/carousel-images/Curried\ Mussels\ -\ Acheulean\ Chardonnay\ \(1\ of\ 1\).JPG");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
   margin: 0;
 }
 
 .slide:nth-child(4) {
+  background-image: url("./assets//images/carousel-images/Fish\ Taco\ 2.jpg");
   background-color: #da6f2b;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.slide:nth-child(5) {
+  background-color: #49b293;
+  background-image: url("./assets//images/carousel-images/Curried\ Mussels\ -\ Acheulean\ Chardonnay\ \(1\ of\ 1\)\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide:nth-child(6) {
+  background-color: #b03532;
+  background-image: url("./assets//images/carousel-images/MSC\ CHEFS\ \(1\ of\ 1\).jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.slide:nth-child(7) {
+  background-color: #6a478f;
+  background-image: url("./assets//images/carousel-images/Parmesan\ Crusted\ Haddock\ with\ Corn\ Chowder\ \(1\ of\ 5\).jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin: 0;
+}
+
+.slide:nth-child(8) {
+  background-image: url("./assets//images/carousel-images/Photos\ V2\ \(1\ of\ 8\).jpg");
+  background-color: #da6f2b;
+  background-size: cover;
+  background-position: center;
+}
+.slide:nth-child(9) {
+  background-image: url("./assets//images/carousel-images/Parmesan\ Crusted\ Haddock\ with\ Corn\ Chowder\ \(5\ of\ 5\).jpg");
+  background-color: #da6f2b;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
   .wrapper-banner.min {
     width: 100%;
     background-color: black; /* or any other color you prefer */
+  }
+
+  .slide:nth-child(1) {
+    background-color: #49b293;
+    background-image: url("./assets//images/carousel-images/bone\ broth\ 2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slide:nth-child(2) {
+    background-color: #b03532;
+    background-image: url("./assets//images/carousel-images/chicken\ risotto.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slide:nth-child(3) {
+    background-color: #6a478f;
+    background-image: url("./assets//images/carousel-images/Curried\ Mussels\ -\ Acheulean\ Chardonnay\ \(1\ of\ 1\).JPG");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+  }
+
+  .slide:nth-child(4) {
+    background-image: url("./assets//images/carousel-images/Fish\ Taco\ 2.jpg");
+    background-color: #da6f2b;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slide:nth-child(5) {
+    background-color: #49b293;
+    background-image: url("./assets//images/carousel-images/Curried\ Mussels\ -\ Acheulean\ Chardonnay\ \(1\ of\ 1\)\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slide:nth-child(6) {
+    background-color: #b03532;
+    background-image: url("./assets//images/carousel-images/MSC\ CHEFS\ \(1\ of\ 1\).jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  .slide:nth-child(7) {
+    background-color: #6a478f;
+    background-image: url("./assets//images/carousel-images/Parmesan\ Crusted\ Haddock\ with\ Corn\ Chowder\ \(1\ of\ 5\).jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    margin: 0;
+  }
+
+  .slide:nth-child(8) {
+    background-image: url("./assets//images/carousel-images/Photos\ V2\ \(1\ of\ 8\).jpg");
+    background-color: #da6f2b;
+    background-size: cover;
+    background-position: center;
+  }
+  .slide:nth-child(9) {
+    background-image: url("./assets//images/carousel-images/Parmesan\ Crusted\ Haddock\ with\ Corn\ Chowder\ \(5\ of\ 5\).jpg");
+    background-color: #da6f2b;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -459,14 +579,13 @@ form {
     min-height: 300px;
   }
 
-
-.profile-list {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 2rem;
-  min-height: 50vh;
-}
+  .profile-list {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    min-height: 50vh;
+  }
   .containerb {
     padding-right: 0;
     padding-left: 0;
@@ -496,7 +615,6 @@ form {
     display: flex;
     flex-direction: flex;
     justify-content: center;
-    margin-bottom: -16rem;
   }
 }
 
@@ -513,7 +631,7 @@ form {
   height: 100%;
 }
 .header-image {
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 }
 /* } */
@@ -569,9 +687,7 @@ form {
     .header-image-container {
       height: fit-content;
     }
-    .header-text {
-      top: 50%;
-    }
+
     /* //small change÷ */
     .logo-container {
       max-width: auto; /* Reduce the width at smaller screen sizes */
