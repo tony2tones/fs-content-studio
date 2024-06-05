@@ -551,8 +551,6 @@ form {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: left top;
-
-    margin: 0;
   }
 
   .slide:nth-child(8) {
@@ -700,7 +698,12 @@ form {
     }
 
     .header-text {
-      left: 50%;
+      left: 54%;
+      top: 45%;
+    }
+    .header-image {
+      height: 50vh;
+      width: 100%;
     }
 
     .border {
