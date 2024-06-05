@@ -171,7 +171,6 @@ hr.divider {
   margin: 2rem auto 2rem;
 }
 
-
 .subtitle {
   display: inline-block;
   background-color: #020001;
@@ -468,7 +467,6 @@ form {
 }
 
 @media (max-width: 768px) {
-
   .slide:nth-child(1) {
     background-color: #49b293;
     background-image: url("./assets//images/carousel-images/bone\ broth\ 2.jpg");
@@ -646,6 +644,7 @@ form {
   @media (max-width: 670px) {
     .header-image-container {
       height: fit-content;
+      max-width: auto; /* Reduce the width at smaller screen sizes */
     }
 
     /* //small change÷ */
@@ -660,24 +659,13 @@ form {
     }
 
     .header-text {
-      left: 14rem;
       top: 28rem;
-  }
+      left: 57%;
+    }
     .header-image {
       height: 50vh;
       width: 100%;
     }
-
-    .border {
-      width: 50%; /* Adjust the width of the border */
-    }
-    .logo-title {
-      font-size: 2rem; /* Adjust the font size of the title */
-    }
-    .subtitle {
-      font-size: large; /* Adjust the font size of the subtitle */
-    }
-   
 
     .list-style {
       margin-left: -20px;
