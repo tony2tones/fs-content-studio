@@ -3,40 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="./styles.css" />
+    
+    <!-- Preconnect to Google Fonts and GStatic -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&family=Roboto+Condensed:wght@100&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      href="./icon-black-crop.ico"
-      sizes="16x16"
-    />
+    
+    <!-- Combined Google Fonts request -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@100&family=Roboto:wght@100&family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./icon-black-crop.ico" sizes="16x16" />
 
     <title>FC Content Studio</title>
   </head>
@@ -104,13 +82,12 @@
             <img
               class="profile-img"
               src="./assets/images/proChefCrop.png"
-              alt=""
+              alt="Reuben Riffel"
             />
           </div>
           <div class="description-container">
             <h2>Reuben Riffel</h2>
-
-            <h3 class="nowrap">Chef | Author | Entreprenuer</h3>
+            <h3 class="nowrap">Chef | Author | Entrepreneur</h3>
             <div class="profile-description">
               <p>
                 Award-winning chef and TV host Reuben Eiffel boasts over 20
@@ -125,12 +102,11 @@
             <img
               class="profile-img"
               src="./assets/images/filmDirectorCrop.png"
-              alt=""
+              alt="Charl Laubscher"
             />
           </div>
           <div class="description-container">
             <h2>Charl Laubscher</h2>
-
             <h3 class="nowrap">Producer | Director | Writer</h3>
             <div class="profile-description">
               <p>
@@ -150,7 +126,7 @@
     <section>
       <div class="container-services">
         <div>
-          <img src="./assets/images/services.png" alt="" />
+          <img src="./assets/images/services.png" alt="Our Services" />
         </div>
         <div class="service-description">
           <h1 class="title">Our Services</h1>
@@ -181,19 +157,13 @@
               active
             </li>
           </ul>
-          <p></p>
         </div>
       </div>
     </section>
     <hr class="divider" />
-
     <section class="slider-wrapper">
-      <button class="slide-arrow" id="slide-arrow-prev">
-        &#8249;
-      </button>
-      <button class="slide-arrow" id="slide-arrow-next">
-        &#8250;
-      </button>
+      <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+      <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
       <ul class="slides-container" id="slides-container">
         <li class="slide slide-01"></li>
         <li class="slide slide-02"></li>
@@ -215,14 +185,9 @@
         <div class="flex-col">
           <label for="name">Name</label>
           <input name="name" type="text" id="name" placeholder="Input name" />
-          <label for="email">email</label>
-          <input
-            name="email"
-            type="email"
-            id="email"
-            placeholder="Input email"
-          />
-          <label for="comment">message</label>
+          <label for="email">Email</label>
+          <input name="email" type="email" id="email" placeholder="Input email" />
+          <label for="comment">Message</label>
           <textarea name="comment" id="comment" rows="3"></textarea>
 
           <input name="_formsubmit_id" type="text" style="display: none" />
@@ -234,7 +199,7 @@
         <a href="https://www.linkedin.com/company/the-content-studio-sa/">
           <img
             src="./assets/svg/linkedin logo_icon.svg"
-            alt="SVG LinkedIn Image"
+            alt="LinkedIn"
           />
         </a>
       </div>
