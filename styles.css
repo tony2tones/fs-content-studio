@@ -556,6 +556,7 @@ form {
   }
   .header-text {
     left: 50%;
+    font-size: 1.2rem;
   }
   .founders {
     grid-template-columns: repeat(2, 1fr);
@@ -599,8 +600,7 @@ form {
   width: 100%;
 }
 /* } */
-
-/* Small devices (phones) */
+/* Small devices (phones, 700px and down) */
 @media (max-width: 700px) {
   .parallax {
     height: 145vh;
@@ -610,66 +610,112 @@ form {
     padding-right: 0;
     padding-left: 0;
   }
-  /* //small change÷ */
+
   .logo-container {
-    max-width: 436px; /* Reduce the width at smaller screen sizes */
+    max-width: 100%; /* Ensure the logo container fits within the screen */
   }
+
   .logo-holder {
     left: 3.3rem;
   }
+
   .border {
     width: 50%; /* Adjust the width of the border */
   }
+
   .logo-title {
     font-size: 4rem; /* Adjust the font size of the title */
   }
+
   .subtitle {
     font-size: x-large; /* Adjust the font size of the subtitle */
   }
+
   .profile-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: -16rem;
   }
+
   .description-container {
-    background-color: rgb(25 23 23 / 50%);
+    background-color: rgba(25, 23, 23, 0.5);
   }
+
   .founders {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
   }
 
-  @media (max-width: 670px) {
-    .header-image-container {
-      height: fit-content;
-      max-width: auto; /* Reduce the width at smaller screen sizes */
-    }
+  .header-image-container {
+    height: fit-content;
+    max-width: 100%;
+  }
 
-    /* //small change÷ */
-    .logo-container {
-      max-width: auto; /* Reduce the width at smaller screen sizes */
-    }
-    .logo-holder {
-      position: absolute;
-      background-color: #020001;
-      bottom: 37.5rem;
-      left: 10px;
-    }
+  .header-text {
+    top: 28rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Make sure the text fits within the screen */
+    text-align: center;
+  }
 
-    .header-text {
-      top: 28rem;
-      left: 57%;
-    }
-    .header-image {
-      height: 50vh;
-      width: 100%;
-    }
+  .header-image {
+    height: 50vh;
+    width: 100%;
+  }
 
-    .list-style {
-      margin-left: -20px;
-      margin-right: 15px;
-    }
+  .list-style {
+    margin-left: -20px;
+    margin-right: 15px;
+  }
+}
+
+/* Extra small devices (phones, 500px and down) */
+@media (max-width: 500px) {
+  .logo-title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: large;
+  }
+
+  .profile-container {
+    margin-bottom: -10rem;
+  }
+
+  .founders {
+    gap: 1.5rem;
+  }
+
+  .list-style {
+    margin-left: -15px;
+    margin-right: 10px;
+  }
+
+  .header-text {
+    font-size: medium;
+  }
+}
+
+/* Very small devices (phones, 400px and down) */
+@media (max-width: 400px) {
+  .logo-title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: medium;
+  }
+
+  .list-style {
+    margin-left: -10px;
+    margin-right: 5px;
+  }
+
+  .header-text {
+    font-size: small;
   }
 }
