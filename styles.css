@@ -36,19 +36,6 @@ ul {
   color: #ffff;
 }
 
-.banner {
-  position: absolute;
-  bottom: 51%;
-  display: inline-block;
-  height: 272px;
-  background-color: #020001;
-}
-
-.wrapper-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .profile-description {
   padding: 1rem;
   padding-right: 0rem;
@@ -184,15 +171,6 @@ hr.divider {
   margin: 2rem auto 2rem;
 }
 
-.sub-text {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  width: max-content;
-  font-size: xx-large;
-  position: relative;
-  left: 2rem;
-}
 
 .subtitle {
   display: inline-block;
@@ -214,12 +192,6 @@ hr.divider {
   width: 45%;
   height: auto;
   display: block;
-}
-
-.logo-banner {
-  font-family: Roboto, sans-serif;
-  max-width: 100%;
-  height: auto;
 }
 
 .founders {
@@ -317,7 +289,7 @@ form {
   background-size: contain;
   background-position: center;
   top: 35px;
-  width: 100%;
+  max-width: 100%;
   height: 55vh;
   z-index: -88;
   margin-top: 2rem;
@@ -496,10 +468,6 @@ form {
 }
 
 @media (max-width: 768px) {
-  .wrapper-banner.min {
-    width: 100%;
-    background-color: black; /* or any other color you prefer */
-  }
 
   .slide:nth-child(1) {
     background-color: #49b293;
@@ -636,12 +604,6 @@ form {
 
 /* Small devices (phones) */
 @media (max-width: 700px) {
-  .mobile {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-  }
-
   .parallax {
     height: 145vh;
   }
@@ -715,10 +677,7 @@ form {
     .subtitle {
       font-size: large; /* Adjust the font size of the subtitle */
     }
-    .sub-text {
-      display: flex;
-      flex-direction: column;
-    }
+   
 
     .list-style {
       margin-left: -20px;
