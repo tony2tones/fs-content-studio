@@ -698,9 +698,9 @@ form {
     }
 
     .header-text {
-      left: 54%;
-      top: 45%;
-    }
+      left: 14rem;
+      top: 28rem;
+  }
     .header-image {
       height: 50vh;
       width: 100%;
