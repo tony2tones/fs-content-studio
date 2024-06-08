@@ -679,9 +679,11 @@ form {
     margin-bottom: -10rem;
   }
   nav {
-    font-size: small;
+    font-size: x-small;
   }
-
+  nav ul {
+    gap: 1rem;
+  }
   .founders {
     gap: 1.5rem;
   }
