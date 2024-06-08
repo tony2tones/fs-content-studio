@@ -694,7 +694,8 @@ form {
   }
 
   .header-text {
-    font-size: medium;
+    font-size: small;
+    top: 40%;
   }
 }
 
