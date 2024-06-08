@@ -20,15 +20,17 @@
   </head>
   <body>
     <header>
-      <!-- <nav>
+      <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#companyProfile">Company profile</a></li>
+          <li><a href="#founders">Founders</a></li>
+          <li><a href="#ourServices">Our services</a></li>
+          <li><a href="#contactUs">Contact us</a></li>
         </ul>
-      </nav> -->
+      </nav>
+      <hr class="divider" />
       <script async defer src="https://static.vercel.com/c.js"></script>
     </header>
-    <hr class="divider" />
     <section>
       <div class="header-image-container">
         <div class="header-image"></div>
@@ -39,7 +41,7 @@
       </p>
     </section>
     <hr class="divider" />
-    <section class="parallax">
+    <section id="companyProfile" class="parallax">
       <h1 class="title background-color">Company profile</h1>
       <div class="company-profile-container company-profile-image">
         <div class="company-profile-description">
@@ -74,7 +76,7 @@
       </div>
     </section>
     <hr class="divider" />
-    <section>
+    <section class="founder-padding" id="founders">
       <h1 class="title">Founders</h1>
       <div class="container">
         <div class="founders">
@@ -123,7 +125,7 @@
       </div>
     </section>
     <hr class="divider" />
-    <section>
+    <section id="ourServices">
       <div class="container-services">
         <div>
           <img src="./assets/images/services.png" alt="Our Services" />
@@ -162,8 +164,8 @@
     </section>
     <hr class="divider" />
     <section class="slider-wrapper">
-      <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
-      <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+      <!-- <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+      <button class="slide-arrow" id="slide-arrow-next">&#8250;</button> -->
       <ul class="slides-container" id="slides-container">
         <li class="slide slide-01"></li>
         <li class="slide slide-02"></li>
@@ -176,7 +178,7 @@
       </ul>
     </section>
     <hr class="divider" />
-    <section>
+    <section id="contactUs">
       <h1 class="title">Contact Us</h1>
       <form
         id="contactform"
