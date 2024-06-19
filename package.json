@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "build:sass": "sass scss/styles.scss css/styles.css",
+    "watch:sass": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0"
+  },
   "dependencies": {
     "@vercel/analytics": "^1.1.2"
   }
