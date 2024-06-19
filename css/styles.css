@@ -1,0 +1,398 @@
+:root {
+  --blue: #1e90ff;
+  --gold: rgb(219, 172, 51);
+  --background: #15171b;
+  --dark: #140c0c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  background-color: var(--dark);
+  align-items: center;
+  justify-content: center;
+  color: rgb(193, 159, 72);
+  width: fit-content;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+nav {
+  background-color: var(--dark);
+  padding-top: 0.5rem;
+  display: flex;
+  margin-bottom: -2rem;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: Montserrat, sans-serif;
+  color: rgb(193, 159, 72);
+  margin-bottom: 20px;
+}
+
+a {
+  color: rgb(193, 159, 72);
+  text-decoration: none;
+}
+
+p, ul {
+  color: #fff;
+}
+
+.profile-description {
+  padding: 1rem 0 0 0;
+}
+
+.header-image img {
+  display: block;
+  object-fit: cover;
+}
+
+.header-image-container {
+  max-width: 100%;
+  height: 100vh;
+  min-height: 450px;
+  overflow: hidden;
+}
+
+.header-text {
+  position: absolute;
+  top: 89%;
+  left: 80%;
+  width: 23rem;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: x-large;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+.header-image {
+  background-image: url("../assets/logo/logo-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.title {
+  padding-top: 2rem;
+  font-size: xxx-large;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: inline-block;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.company-profile-container.company-profile-image {
+  display: flex;
+  height: 41rem;
+}
+
+.border {
+  border: 5px solid var(--gold);
+  height: 17%;
+  padding: 3rem 0 3rem 1rem;
+  width: 55%;
+}
+
+hr {
+  display: block;
+  width: 5.5rem;
+  border: 0;
+  border-top: 1px solid var(--gold);
+  padding: 0;
+}
+
+hr.divider {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 2rem auto;
+}
+
+.subtitle {
+  display: inline-block;
+  background-color: #020001;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 5px;
+}
+
+.profile-img {
+  width: 95%;
+  height: auto;
+  max-height: 86%;
+  object-fit: cover;
+  object-position: top;
+}
+.profile-img img {
+  width: 45%;
+  height: auto;
+  display: block;
+}
+
+.founder-padding {
+  padding-top: 1rem;
+}
+
+.founders {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+}
+
+.description-container {
+  line-height: 1.5;
+  margin-top: -1rem;
+  background-color: rgba(25, 23, 23, 0.5);
+}
+.description-container h2 {
+  color: #fff;
+}
+
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: medium;
+}
+
+.mobile {
+  display: none;
+}
+
+.container-services {
+  display: flex;
+  min-height: 40rem;
+}
+.container-services img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+
+.service-description {
+  max-width: 50%;
+  margin: 4rem;
+  margin-top: 0;
+}
+
+.list-style {
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.contact-us-container img {
+  max-width: 300px;
+  height: 200px;
+}
+
+input {
+  width: 15rem;
+  height: 17px;
+}
+
+.flex-col {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  max-width: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.company-profile-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.company-profile-image {
+  position: fixed;
+  background-image: url("../assets//images/dishes.JPG");
+  background-size: contain;
+  background-position: center;
+  top: 35px;
+  max-width: 100%;
+  height: 55vh;
+  z-index: -88;
+  margin-top: 2rem;
+}
+
+.profile-list {
+  padding: 7rem 4rem 2rem 3rem;
+  min-height: 90vh;
+}
+
+.company-profile-description {
+  max-width: 55%;
+  font-size: medium;
+  background-color: var(--background);
+  line-height: 1.5;
+  min-height: 18rem;
+}
+
+.parallax {
+  perspective: 1px;
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+.background-color {
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+  background-color: var(--background);
+}
+
+.slider-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  font-family: "Playfair Display", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides-container {
+  display: grid;
+  grid-template-rows: masonry;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 3;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  min-width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.slide.slide-01 {
+  grid-column: 1/3;
+  grid-row: 1;
+  background-image: url("../assets//images/carousel-images/bone broth 2.jpg");
+}
+.slide.slide-02 {
+  background-image: url("../assets//images/carousel-images/Curried Mussels - Acheulean Chardonnay (1 of 1).JPG");
+  grid-area: 1/span 2;
+  grid-column: 3;
+}
+.slide.slide-03 {
+  background-image: url("../assets//images/carousel-images/Fish Taco 2.jpg");
+}
+.slide.slide-04 {
+  background-image: url("../assets//images/carousel-images/Curried Mussels - Acheulean Chardonnay (1 of 1) (1).jpg");
+}
+.slide.slide-05 {
+  background-image: url("../assets//images/carousel-images/MSC CHEFS (1 of 1).jpg");
+}
+.slide.slide-06 {
+  grid-column: 1/3;
+  background-image: url("../assets//images/carousel-images/Parmesan Crusted Haddock with Corn Chowder (1 of 5).jpg");
+}
+.slide.slide-07 {
+  background-image: url("../assets//images/carousel-images/poached lobster and clams.jpg");
+}
+.slide.slide-08 {
+  background-image: url("../assets//images/carousel-images/smoked fish charcuterie.jpg");
+}
+.slide.slide-09 {
+  grid-column: 3/4;
+  grid-row: 3;
+  background-image: url("../assets//images/carousel-images/Carnival Spaghetti with Rougie Foie Gras 5.jpg");
+}
+
+.control {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+.indicator.active {
+  background-color: var(--blue);
+}
+
+/*# sourceMappingURL=styles.css.map */
